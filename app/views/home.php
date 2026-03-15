@@ -5,21 +5,29 @@
     <p>Automatically analyze spam comments, online gambling, and hate speech.</p>
 
     <form action="<?= BASEURL ?>/analyze" method="POST" class="search-form">
-        <input type="text" name="youtube_url" placeholder="Insert a YouTube video URL" required>
-        <button type="submit">Start Analyze</button>
+        <table class="form-table">  /* tabel */
+            <tr>
+                <td>
+                    <input type="text" name="youtube_url" placeholder="Insert a YouTube video URL" required>
+                </td>
+                <td>
+                    <button type="submit">Start Analyze</button>
+                </td>
+            </tr>
+        </table>
     </form>
 
     <div class="preview-images">
-    <div class="card">
-        <img src="<?= BASEURL ?>/assets/image 2.png" alt="Analyze">
+        <div class="card">
+            <img src="<?= BASEURL ?>/assets/image 2.png" alt="Analyze">
+        </div>
+        <div class="card">
+            <img src="<?= BASEURL ?>/assets/image 3.png" alt="Toxic Detection">
+        </div>
+        <div class="card">
+            <img src="<?= BASEURL ?>/assets/image 4.png" alt="Moderation">
+        </div>
     </div>
-    <div class="card">
-        <img src="<?= BASEURL ?>/assets/image 3.png" alt="Toxic Detection">
-    </div>
-    <div class="card">
-        <img src="<?= BASEURL ?>/assets/image 4.png" alt="Moderation">
-    </div>
-</div>
 </section>
 
 <section class="trusted">
